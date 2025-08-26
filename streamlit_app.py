@@ -72,7 +72,7 @@ basemap = st.selectbox(
     index=0,
 )
 
-point_radius = st.slider("Point radius (meters)", min_value=100, max_value=20000, value=2000, step=100)
+point_radius = st.slider("Point radius (meters)", min_value=100, max_value=40000, value=2000, step=100)
 
 def hex_to_rgb(h):
     if not isinstance(h, str) or not h.startswith("#") or len(h) not in (4, 7):
